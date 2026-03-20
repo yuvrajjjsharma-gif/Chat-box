@@ -68,4 +68,28 @@ Yuvraj Sharma# Chat-box<!DOCTYPE html>
 
 <script src="script.js"></script>
 </body>
-</html>
+</html>body {
+  font-family: Arial;
+  text-align: center;
+  background: #111;
+  color: white;
+}
+
+#chatBox, #aiBox {
+  height: 200px;
+  border: 1px solid #444;
+  margin: 10px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+input {
+  padding: 8px;
+}
+
+button {
+  padding: 8px;
+  background: blue;
+  color: white;
+  border: none;
+}
