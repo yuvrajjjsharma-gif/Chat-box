@@ -48,4 +48,24 @@ Yuvraj Sharma# Chat-box<!DOCTYPE html>
 
 <script src="script.js"></script>
 </body>
+</html><!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>👤 Profile</h2>
+
+<input type="text" id="name" placeholder="Enter name">
+<button onclick="saveProfile()">Save</button>
+
+<p id="showName"></p>
+
+<br><br>
+<a href="index.html">Back to Chat</a>
+
+<script src="script.js"></script>
+</body>
 </html>
