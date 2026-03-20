@@ -28,4 +28,24 @@ Yuvraj Sharma# Chat-box<!DOCTYPE html>
 
 <script src="script.js"></script>
 </body>
+</html><!DOCTYPE html>
+<html>
+<head>
+  <title>AI Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>🤖 AI Chat</h2>
+
+<div id="aiBox"></div>
+
+<input type="text" id="aiInput" placeholder="Ask AI...">
+<button onclick="askAI()">Ask</button>
+
+<br><br>
+<a href="index.html">Back to Chat</a>
+
+<script src="script.js"></script>
+</body>
 </html>
