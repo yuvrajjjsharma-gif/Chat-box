@@ -92,4 +92,36 @@ button {
   background: blue;
   color: white;
   border: none;
+}function sendMsg() {
+  let msg = document.getElementById("msg").value;
+  let box = document.getElementById("chatBox");
+
+  box.innerHTML += "<p>🧑: " + msg + "</p>";
+  document.getElementById("msg").value = "";
+}
+
+function askAI() {
+  let input = document.getElementById("aiInput").value;
+  let box = document.getElementById("aiBox");
+
+  box.innerHTML += "<p>🧑: " + input + "</p>";
+  
+  // Fake AI reply
+  box.innerHTML += "<p>🤖: I am AI, working...!</p>";
+
+  document.getElementById("aiInput").value = "";
+}
+
+function saveProfile() {
+  let name = document.getElementById("name").value;
+  localStorage.setItem("username", name);
+  document.getElementById("showName").innerText = "Saved: " + name;
+}
+
+// Load saved name
+window.onload = function() {
+  let name = localStorage.getItem("username");
+  if(name) {
+    document.getElementById("showName").innerText = "Saved: " + name;
+  }
 }
